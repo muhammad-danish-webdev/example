@@ -42,6 +42,12 @@
     align-items: center;
     justify-content: center;
 }
+
+/* logo section */
+.logo{
+    display: flex;
+}
+
 .logo img{
     width: 170px;
 }
