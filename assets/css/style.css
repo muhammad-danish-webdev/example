@@ -20,8 +20,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: system-ui;
+    font-family: var(--primary-ff);
     list-style: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* header section  */
@@ -85,15 +86,21 @@
 }
 
  /* login button  */
-.light-button{
-    color: var(--black);
+
+.light-button,
+.dark-button{
     padding: 10px 35px;
-    font-family: var(--primary-ff);
-    border-radius: 8px ;
+    border-radius: 8px;
     transition: all .3s ease;
+    padding: 10px 35px;
     display: flex;
     align-items: center;
-    width: 100%;
+    font-family: var(--primary-ff);
+    font-size: 16px;
+
+}
+.light-button{
+    color: var(--black);
     border: 1px solid transparent;
     
 }
@@ -107,14 +114,9 @@
     color: var(--white);
     border: 1px solid black;
     background-color: var(--black);
-    border-radius: 5px;
-    padding: 10px 35px;
-    transition: all .3s ease;
 }
 .dark-button > span{
-    font-size: 16px;
     font-weight: 600;
-    font-family: var(--primary-ff);
 }
 .dark-button:hover{
     color: var(--black);

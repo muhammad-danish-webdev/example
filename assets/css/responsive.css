@@ -26,6 +26,7 @@
     .navbar-buttons{
         width: 300px;
         height: 100vh;
+        /* height: calc(100vh - 75px); */
         background-color: #36a7e6;
         position: fixed;
         right: 0;
@@ -42,12 +43,15 @@
     }
 
     .navbar ul{
+        width: 100%;
         flex-direction: column;
         gap: 20px;
    
     }
 
-   
+    .navbar ul li{
+        width: 100%;
+    }   
     /* navbar hover  */
     .navbar ul li a,
     .navbar ul li a.active{
@@ -55,8 +59,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 260px;
-        height:40px; 
+        
         border-radius: 5px;
         color: black;
         transition: all .3s ease;
